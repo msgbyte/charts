@@ -32,7 +32,11 @@ jobs:
       - name: Update Helm Deps
         run: |
           helm repo add bitnami https://charts.bitnami.com/bitnami
-          cd k8s/helm
+
+          for dir in $(ls -d charts/*); do
+            helm dependency update $dir;
+          done
+
           helm dependency update
 
       - name: Run chart-releaser
