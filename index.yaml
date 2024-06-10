@@ -1,0 +1,30 @@
+apiVersion: v1
+entries:
+  tianji:
+  - apiVersion: v2
+    appVersion: 1.11.2
+    created: "2024-06-10T06:17:34.73168687Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 15.4.2
+    description: All-in-One Insight Hub
+    digest: 52ba402f21cda7a2864b73a41529af87f05c921248a0e5101931a26000d2fae4
+    icon: https://tianji.msgbyte.com/img/logo.svg
+    keywords:
+    - tianji
+    - uptime
+    - umami
+    - server status
+    maintainers:
+    - email: moonrailgun@gmail.com
+      name: moonrailgun
+    name: tianji
+    sources:
+    - https://github.com/msgbyte/tianji
+    type: application
+    urls:
+    - https://github.com/msgbyte/charts/releases/download/tianji-0.1.17/tianji-0.1.17.tgz
+    version: 0.1.17
+generated: "2024-06-10T06:17:34.731695677Z"
